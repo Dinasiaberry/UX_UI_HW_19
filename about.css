@@ -1,0 +1,611 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F2FBFE;
+}
+
+p {
+    font-size: 14px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+
+#button {
+    position: absolute;
+    background-color: rgb(56, 195, 255);
+    color: white;
+    box-shadow: 0px 0px 2px #00000029;
+    border: 1px solid #24b6f7;
+    border-radius: 9px;
+}
+
+nav {
+    background: #24B6F7;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    nav > div#Navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 3%;
+    }
+    #NavLogo {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        display: flex;
+    }
+    #Navbar > div.left > a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0px 3px 6px #0000007C;
+    }
+        #Navbar > div.left {
+            display: flex;
+            width: 37%;
+            margin-left: 6%;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        #Navbar > div.left > a:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+    #Navbar > div.right > a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0px 3px 6px #0000007C;
+        }
+        #Navbar > div.right {
+            display: flex;
+            width: 65%;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #Navbar > div.right > a:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+
+main {
+    background-image: linear-gradient(to bottom, #24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    main > div.heroImg {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        justify-content: space-evenly;
+    }
+        main > div.heroImg > div#MainImg {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-basis: 50%;
+        }
+            main > div.heroImg > div#MainImg > img#MyImage {
+                display: flex;
+                max-width: 100%;
+                height: auto;
+            
+            }
+        main > div.heroImg > div.content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-basis: 50%;
+        }
+            main > div.heroImg > div.content > h3 {
+                text-align: left;
+                display: flex;
+            }
+    main > img#Img {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+section.AboutMe {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    section.AboutMe > div#Logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 50%;
+    }
+        section.AboutMe > div#Logo > img#MainLogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 80%;
+            max-width: 100%;
+            height: auto;
+        }
+    section.AboutMe > div#AboutContent {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+        section.AboutMe > div#AboutContent > h2 {
+            display: flex;
+            text-align: left;
+            margin-left: 5%;
+        }
+        section.AboutMe > div#AboutContent > p {
+            display: flex;
+            text-align: left;
+            margin-left: 5%;
+            line-height: 1.8;
+        }
+        section.AboutMe > div#AboutContent > button {
+            margin-top: 5%;
+            display: flex;
+            margin-left: 2%;
+            margin-bottom: 10%;
+            text-align: left;
+        }
+
+section.Skills {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+}
+    section.Skills > div#CareerSoFar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 65%;
+    }
+        section.Skills > div#CareerSoFar > h2 {
+            display: flex;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        section.Skills > div#CareerSoFar > div#SkillsRow {
+            display: flex;
+            flex-basis: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+            section.Skills > div#CareerSoFar > div#SkillsRow > div.container_01 {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 20%;
+                margin-right: 5%;
+                order: 1;
+            }
+                section.Skills > div#CareerSoFar > div#SkillsRow > div.container_01 > p {
+                    display: flex;
+                    line-height: 1.8;
+                }
+            section.Skills > div#CareerSoFar > div#SkillsRow > div.container_02 {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 20%;
+                margin-right: 10%;
+                order: 2;
+            }
+                section.Skills > div#CareerSoFar > div#SkillsRow > div.container_02 > p {
+                    display: flex;
+                    line-height: 1.8;
+                }
+            section.Skills > div#CareerSoFar > div#SkillsRow > div.container_03 {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 30%;
+                margin-right: 5%;
+                order: 3;
+            }
+                section.Skills > div#CareerSoFar > div#SkillsRow > div.container_03 > p {
+                    display: flex;
+                    line-height: 1.8;
+                }
+    section.Skills > div#Tools {
+        background-image: linear-gradient(to top,#24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-basis: 35%;
+    }
+        section.Skills > div#Tools > h3 {
+            display: flex;
+            text-align: left;
+            margin-top: 25%;
+            margin-left: 5%;
+        }
+        section.Skills > div#Tools > div#ToolsRow {
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            flex-basis: 95%;
+        }
+            section.Skills > div#Tools > div#ToolsRow > div#Column {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 50%;
+                margin-right: 30%;
+            }
+            section.Skills > div#Tools > div#ToolsRow > div#Column > p {
+                display: flex;
+                text-align: left;
+                margin-bottom: 2%;
+                line-height: 1.8;
+                width: 100%;
+                /*why are some lines double??*/
+            }
+
+section.FeaturedProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+}
+    section.FeaturedProjects > h2 {
+        display: flex;
+        margin-bottom: 3%;
+    }
+    section.FeaturedProjects > div#ProjectRow {
+        display: flex;
+        margin-bottom: 3%;
+        flex-direction: row;
+        flex-basis: 70%;
+        justify-content: space-evenly;
+    }
+    section.FeaturedProjects > div#ProjectRow > div#Column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        section.FeaturedProjects > div#ProjectRow > div#Column > div.container_01 {
+            display: flex;
+            margin-bottom: 10%;
+            position: relative;
+        }
+            section.FeaturedProjects > div#ProjectsRow > div#Column > div.container_01 > img#Featured {
+                max-width: 100%;
+                height: auto;
+                display: flex;
+            }
+            section.FeaturedProjects > div#ProjectRow > div#Column > div.container_01 > button#Button {
+                position: absolute;
+                display: flex;
+                bottom: 90%;
+                text-align: right;
+            }
+        section.FeaturedProjects > div#ProjectRow > div#Column > div.container_02 {
+            display: flex;
+            flex: column;
+            margin-bottom: 10%;
+            position: relative;
+        }
+            section.FeaturedProjects > div#ProjectsRow > div#Column > div.container_02 > img#Featured {
+                max-width: 100%;
+                height: auto;
+                display: flex;
+            }
+            section.FeaturedProjects > div#ProjectRow > div#Column > div.container_02 > button#Button {
+                position: absolute;
+                display: flex;
+                bottom: 90%;
+                text-align: right;
+            }
+        section.FeaturedProjects > div#ProjectRow > div#Column > div.container_03 {
+            display: flex;
+            margin-bottom: 10%;
+            position: relative;
+        }
+            section.FeaturedProjects > div#ProjectsRow > div#Column > div.container_03 > img#Featured {
+                max-width: 100%;
+                height: auto;
+                display: flex;
+            }
+            section.FeaturedProjects > div#ProjectRow > div#Column > div.container_03 > button#Button {
+                position: absolute;
+                display: flex;
+                bottom: 90%;
+                text-align: right;
+            }
+        section.FeaturedProjects > div#ProjectRow > div#Column > div.container_04 {
+            display: flex;
+            margin-bottom: 10%;
+            position: relative;
+        }
+            section.FeaturedProjects > div#ProjectsRow > div#Column > div.container_04 > img#Featured {
+                max-width: 100%;
+                height: auto;
+                display: flex;
+            }
+            section.FeaturedProjects > div#ProjectRow > div#Column > div.container_04 > button#Button {
+                position: absolute;
+                display: flex;
+                bottom: 90%;
+                text-align: right;
+            }
+    section.FeaturedProjects > div#DesignsButton {
+        display: flex;
+        margin-bottom: 10%;
+        max-width: 100%;
+        height: auto;
+    }
+
+section.MyContact {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    section.MyContact > div#row {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+        section.MyContact > div#row > div.Contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-basis: 40%;
+        }
+        section.MyContact > div#row > div.Contact > p {
+        line-height: 1.3;
+        }
+    div.Contact > ul > li {
+        margin-bottom: 2%;
+    }
+    #contact {
+        width: 15%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    #italic {
+       font-style: italic; 
+    }
+        section.MyContact > div#row > div.ContactLinks {
+            background-image: linear-gradient(to top,#24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+    .ContactLinks > h3 {
+        margin-left: 20px;
+        padding-top: 5%;
+    }
+        .ContactLinks > ul > li {
+            margin-right: 3%;
+            margin-bottom: 2%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+    footer {
+        background: #24B6F7;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: flex-end;
+        padding-bottom: 3%;
+    }
+        footer > div.footerLogo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            flex-basis: 40%;
+        }
+        #FootLogo {
+            width: 30%;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+        }
+            footer > div.footerLogo > p {
+                text-decoration: none;
+                font-style: italic;
+                color: white;
+                text-shadow: 0px 3px 6px #0000007C;
+                margin-left: -10%;
+                margin-right: 10%;
+            }
+        footer > div#footercolumn {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 30%;
+        }
+            footer > div#footercolumn > div.top > a {
+                text-decoration: none;
+                color: white;
+                text-shadow: 0px 3px 6px #0000007C;
+            }
+            footer > div#footercolumn > div.top {
+                display: flex;
+                justify-content: flex-end;
+                justify-content: space-between;
+            }
+            footer > div#footercolumn > div.top > a:hover {
+                color: #003143;
+                text-shadow: 0px 3px 6px #0000007C;
+            }
+            footer > div#footercolumn > div.bottom > a {
+                text-decoration: none;
+                color: white;
+                text-shadow: 0px 3px 6px #0000007C;
+            }
+            footer > div#footercolumn > div.bottom {
+                display: flex;
+                justify-content: flex-end;
+                justify-content: space-between;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            footer > div#footercolumn > div.bottom > a:hover {
+                color: #003143;
+                text-shadow: 0px 3px 6px #0000007C;
+            }
+
+
+@media only screen and (max-width: 600px) {
+    /*mobile - rewrite widths */ 
+    /*Font Sizes*/
+    p {
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    /*IMAGES*/
+    img#NavLogo {
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        position: absolute;
+    }
+    img#MyImage {
+        max-width: 63%;
+        height: auto;
+        display: flex;
+    }
+    img#Img {
+        max-width: 50%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    img#MainLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 80%;
+        max-width: 60%;
+        height: auto;
+    }
+    img#Featured {
+        max-width: 47%;
+        height: auto;
+        display: flex;
+    }
+    img#contact {
+        width: 15%;
+        max-width: 36%;
+        height: auto;
+        vertical-align: middle;
+    }
+    img#FootLogo {
+        width: 30%;
+        max-width: 53%;
+        height: auto;
+        display: flex;
+    }
+   div#DesignsButton {
+        display: flex;
+        margin-bottom: 10%;
+        max-width: 47%;
+        height: auto;
+    }
+    /*FLEX-CONTAINERS*/
+    main > div.heroImg {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        justify-content: space-evenly;
+    }
+    section.AboutMe {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    section.Skills {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10%;
+    }
+    section.Skills > div#CareerSoFar > div#SkillsRow {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+    section.FeaturedProjects > div#ProjectRow {
+        display: flex;
+        margin-bottom: 3%;
+        flex-direction: column;
+        flex-basis: 70%;
+        justify-content: space-evenly; 
+    }
+    section.MyContact > div#row {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%; 
+    }
+}
